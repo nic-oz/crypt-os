@@ -8,3 +8,5 @@ const home = require('./home');
 
 //Create routes
 router.get('/', home.get);
+
+module.exports = router;
