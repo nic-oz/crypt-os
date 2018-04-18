@@ -1,11 +1,11 @@
 const db = require('../databases/db_connection');
 
-const getCoinDetails = symbol => {
+const getCoinDetails = coinSym => {
   return db.query(
     `
     SELECT * FROM coins WHERE symbol= $1
 `,
-    [symbol]
+    [coinSym]
   );
 };
 
