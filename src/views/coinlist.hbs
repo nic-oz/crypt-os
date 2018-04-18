@@ -1,0 +1,17 @@
+
+<section>
+  <ul>
+
+    {{#each coins}}
+
+      <li>
+        <a href="">
+          <div style="background-image: url(/images/coins/{{ this.symbol }})"></div>
+          <span>{{ this.symbol }}</span>
+        </a>
+      </li>
+
+    {{/each}}
+
+  </ul>
+</section>
