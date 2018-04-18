@@ -20,13 +20,13 @@ CREATE INDEX password_idx ON users(password);
 INSERT INTO coins
   (name, symbol, rank, supply)
 VALUES
-  ('Bitcoin', 'BTC', 1, 21000000.0),
-  ('Ethereum', 'ETH', 2, NULL),
-  ('Ripple', 'XRP', 3, 100000000000),
-  ('Bitcoin Cash', 'BCH', 4, 21000000.0),
-  ('Litecoin', 'LTC', 5, 84000000.0),
-  ('EOS', 'EOS', 6, 1000000000.0),
-  ('Cardano', 'ADA', 7, 45000000000.0),
-  ('Stellar', 'XLM', 8, NULL),
-  ('NEO', 'NEO', 9, 100000000.0),
-  ('IOTA', 'MIOTA', 10, 2779530283.0)
+  ('Bitcoin', 'btc', 1, 21000000.0),
+  ('Ethereum', 'eth', 2, NULL),
+  ('Ripple', 'xrp', 3, 100000000000),
+  ('Bitcoin Cash', 'bch', 4, 21000000.0),
+  ('Litecoin', 'ltc', 5, 84000000.0),
+  ('EOS', 'eos', 6, 1000000000.0),
+  ('Cardano', 'ada', 7, 45000000000.0),
+  ('Stellar', 'xlm', 8, NULL),
+  ('NEO', 'neo', 9, 100000000.0),
+  ('IOTA', 'miota', 10, 2779530283.0)
