@@ -14,13 +14,25 @@ main {
 
 .nav__container {
   position: fixed;
-  display: block;
-  top: 0;
+display: block;
+top: 0;
+height: 9vh;
+background: white;
+width: 100%;
 }
 .nav__list {
+  margin: 0px;
+  padding: 1vh;
 }
 .nav__link {
+  text-decoration: none;
 }
+.nav__link img {
+  height: 30px;
+  padding:1vh;
+}
+
+
 .nav__item {
 }
 .section__banner {
@@ -31,6 +43,8 @@ main {
 .section__coins {
 }
 .coins__list {
+  background-color: white;
+  margin: 200px;
 }
 .coin__list--item {
 }
@@ -40,7 +54,7 @@ main {
 .coin-article {
   background-color: lightGray;
   width: 400px;
-  margin: auto;
+  margin: 9vh auto;
   padding: 15px;
 }
 
@@ -74,9 +88,10 @@ margin: auto;
 .coin-article__footer {
   background-color: gray;
 }
-/* .footer__container {} 
+
+/* .footer__container {}
 .error {}
-.error__desc {} 
+.error__desc {}
 .error__msg {}
 .error__image {}
 
