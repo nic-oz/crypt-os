@@ -1,4 +1,8 @@
+
+@import url('https://rsms.me/inter/inter-ui.css');
+
 html {
+  font-family: 'Inter UI', sans-serif;
 }
 
 body {
@@ -46,6 +50,45 @@ width: 100%;
 }
 .coin__logo {
 }
+
+.coin-article {
+  background-color: lightGray;
+  width: 400px;
+  margin: 9vh auto;
+  padding: 15px;
+}
+
+.coin-article__header {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2em;
+}
+
+.coin-article__header img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.coin-article__header h1 {
+margin: auto;
+}
+
+.coin-article__body {
+  
+}
+
+.coin-article__body div{
+  border: black solid 1px; 
+  padding: 10px;
+}
+
+.coin-article__footer {
+  background-color: gray;
+}
+
 /* .footer__container {}
 .error {}
 .error__desc {}
