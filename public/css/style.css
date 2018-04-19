@@ -12,6 +12,9 @@ main {
   position: fixed;
   display: block;
   top: 0;
+  height: 5vh;
+  background: white;
+  width: 100%;
 }
 .nav__list {
 }
@@ -32,9 +35,9 @@ main {
 }
 .coin__logo {
 }
-/* .footer__container {} 
+/* .footer__container {}
 .error {}
-.error__desc {} 
+.error__desc {}
 .error__msg {}
 .error__image {}
 
