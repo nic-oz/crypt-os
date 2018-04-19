@@ -2,12 +2,16 @@ html {
 }
 
 body {
+  margin: 0;
 }
 
 main {
 }
 
 .nav__container {
+  position: fixed;
+  display: block;
+  top: 0;
 }
 .nav__list {
 }
