@@ -1,23 +1,22 @@
 <section class="section__banner">
 
-  <h1>The future is FACoin!!</h1>
-  <h3>And the future looks rich</h3>
+  <h1 class="header">Choose a coin to find more info:</h1>
+
 <div class="section__coins">
-  <ul class="coins__list">
+  <div class="coins__list">
 
     {{#each allCoins}}
 
-    <li class="coin__list--item">
+    <div class="coin__list--item">
       <a href="/{{this.symbol}}">
         {{!-- <div class="coin__logo" style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div> --}}
         <img src="/images/coins/{{ this.symbol }}.svg"/>
-        <span>{{ this.symbol }}</span>
       </a>
-    </li>
+    </div>
 
 
     {{/each}}
 
-  </ul>
+  </div>
 </div>
 </section>

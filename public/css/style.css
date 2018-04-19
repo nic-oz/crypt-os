@@ -12,6 +12,12 @@ body {
 main {
 }
 
+.header{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .nav__container {
   position: fixed;
 display: block;
@@ -37,19 +43,38 @@ width: 100%;
 }
 .section__banner {
   height: 100vh;
-  background: url('../images/background.jpg');
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/background.jpg') ;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section__coins {
   height: 60%;
   width: 60%;
-  margin: 15% auto;
+  margin: auto;
 }
 .coins__list {
-  background-color: white;
+  /* background-color: white; */
   margin: 0 auto;
+  display: grid;
+  height: 35vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 5vh;
+  text-align: center;
 }
 .coin__list--item {
+}
+
+.coin__list--item img {
+  min-height: 100%;
+  min-width: auto;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.coin__list--item img:hover {
+  transform: rotateY( 360deg );
 }
 .coin__logo {
 }
@@ -84,11 +109,11 @@ margin: auto;
 }
 
 .coin-article__body {
-  
+
 }
 
 .coin-article__body div{
-  border: black solid 1px; 
+  border: black solid 1px;
   padding: 10px;
 }
 
