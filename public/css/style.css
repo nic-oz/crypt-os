@@ -51,6 +51,10 @@ width: 100%;
 .coin__logo {
 }
 
+.hidden {
+  display: none;
+}
+
 .coin-article {
   background-color: lightGray;
   width: 400px;
