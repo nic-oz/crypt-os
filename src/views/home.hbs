@@ -1,11 +1,11 @@
-<section>
-  <ul>
+<section class="section__coins">
+  <ul class="coins__list">
 
     {{#each allCoins}}
 
-    <li>
-      <a href="">
-        <div style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div>
+    <li class="coin__list--item">
+      <a href="/{{this.symbol}}">
+        <div class="coin__logo" style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div>
         <span>{{ this.symbol }}</span>
       </a>
     </li>
