@@ -1,0 +1,41 @@
+html {
+}
+
+body {
+  margin: 0;
+}
+
+main {
+}
+
+.nav__container {
+  position: fixed;
+  display: block;
+  top: 0;
+}
+.nav__list {
+}
+.nav__link {
+}
+.nav__item {
+}
+.section__banner {
+  height: 100vh;
+  background: url('../images/background.jpg');
+  background-size: cover;
+}
+.section__coins {
+}
+.coins__list {
+}
+.coin__list--item {
+}
+.coin__logo {
+}
+/* .footer__container {} 
+.error {}
+.error__desc {} 
+.error__msg {}
+.error__image {}
+
+ */
