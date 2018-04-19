@@ -1,11 +1,33 @@
-# This is a cool project from the Crypt-OS team!
+## Crypt-os
+A web app for users to search information related the current crypto-currencies. So you can get more information about the crypto-currencies you are interested in.
 
-## Tasks
+### Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-* Build a crypto-currency app using the Express framework.
-* Use a PostgreSQL database to store and retrieve data.
-* Populate a handlebars template for server-side rendering and displayed on the front-end.
-* Make API call to retrieve live information for currency when in detail view
-* Include tests and set up code coverage.
-* Use Heroku or a similar service to host the app and the database.
-* Include ES6 syntax on the server.
+### prerequisites
+1. Clone the repo:
+	- `git clone https://github.com/fac-13/crypt-os.git`
+
+2. Run npm install to install all dependencies:
+	-	`npm install`
+
+3. Open either pgcli/psql, and create a database:
+	- `createdb testdb`
+
+4. Create a user for your database using:
+	- `CREATE USER [the new username] WITH SUPERUSER PASSWORD '[the password of the database]';`
+
+5. exit pgcli/psql and run the build the database locally using:
+	-	`\q` (exits pgcli/psql)
+	-	`psql -d testdb -f [full file path to db build];`
+
+6. Select data from coins table:
+	- `SELECT * FROM coins`
+
+### Running the test
+
+To see the tests used to build the app run:
+
+	npm test
+
+what these test ----------------------------
