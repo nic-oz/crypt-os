@@ -1,12 +1,12 @@
-const pgp = require('pg-promise');
+const pgp = require('pg-promise')();
 const url = require('url');
 require('env2')('.env');
 
 let DB_URL = process.env.DB_URL;
 
-if (process.env.NODE_ENV === 'test') {
-    DB_URL = process.env.TEST_DB_URL;
-}
+// if (process.env.NODE_ENV === 'test') {
+//     DB_URL = process.env.TEST_DB_URL;
+// }
 
 if (!DB_URL) throw new Error('DB_URL must be set');
 
