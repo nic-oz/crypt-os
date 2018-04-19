@@ -37,10 +37,13 @@ width: 100%;
   background-size: cover;
 }
 .section__coins {
+  height: 60%;
+  width: 60%;
+  margin: 15% auto;
 }
 .coins__list {
   background-color: white;
-  margin: 200px;
+  margin: 0 auto;
 }
 .coin__list--item {
 }
