@@ -10,16 +10,25 @@ main {
 
 .nav__container {
   position: fixed;
-  display: block;
-  top: 0;
-  height: 5vh;
-  background: white;
-  width: 100%;
+display: block;
+top: 0;
+height: 9vh;
+background: white;
+width: 100%;
 }
 .nav__list {
+  margin: 0px;
+  padding: 1vh;
 }
 .nav__link {
+  text-decoration: none;
 }
+.nav__link img {
+  height: 30px;
+  padding:1vh;
+}
+
+
 .nav__item {
 }
 .section__banner {
@@ -30,6 +39,8 @@ main {
 .section__coins {
 }
 .coins__list {
+  background-color: white;
+  margin: 200px;
 }
 .coin__list--item {
 }
