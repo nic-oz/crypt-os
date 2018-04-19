@@ -5,6 +5,7 @@ exports.get = (req, res, next) => {
   coinDetial(coinSym)
     .then(coinRecord => {
       if (coinRecord && coinRecord.length > 0) {
+        coinRecord = coinRecord[0];
         console.log(coinRecord);
         return res.render('coindetail', { coinRecord });
       } else {
