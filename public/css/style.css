@@ -1,6 +1,4 @@
-
 @import url('https://rsms.me/inter/inter-ui.css');
-
 html {
   font-family: 'Inter UI', sans-serif;
 }
@@ -10,59 +8,74 @@ body {
 }
 
 main {
+  background: #800057;
 }
 
-.header{
+.header {
+  margin-top: 5rem;
   color: white;
   text-align: center;
   font-size: 2rem;
 }
 
-.nav__container {
-position: fixed;
-display: block;
-top: 0;
-height: 9vh;
-background: white;
-width: 100%;
+.header__desc {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
 }
+
+.nav__container {
+  position: fixed;
+  display: block;
+  top: 0;
+  height: 9vh;
+  background: white;
+  width: 100%;
+}
+
 .nav__list {
   margin: 0px;
   padding: 1vh;
 }
+
 .nav__link {
   text-decoration: none;
 }
+
 .nav__link img {
   height: 30px;
-  padding:1vh;
+  padding: 1vh;
 }
-
 
 .nav__item {
 }
+
 .section__banner {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/background.jpg') ;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/background.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .section__coins {
   width: 100%;
   margin: 0 auto;
 }
+
 .coins__list {
   /* background-color: white; */
   margin: 0 auto;
   display: grid;
   height: 35vh;
   width: 60%;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 5%;
   text-align: center;
 }
+
 .coin__list--item {
 }
 
@@ -74,8 +87,9 @@ width: 100%;
 }
 
 .coin__list--item img:hover {
-  transform: rotateY( 360deg );
+  transform: rotateY(360deg);
 }
+
 .coin__logo {
 }
 
@@ -105,14 +119,13 @@ width: 100%;
 }
 
 .coin-article__header h1 {
-margin: auto;
+  margin: auto;
 }
 
 .coin-article__body {
-
 }
 
-.coin-article__body div{
+.coin-article__body div {
   border: black solid 1px;
   padding: 10px;
 }
@@ -121,7 +134,44 @@ margin: auto;
   background-color: gray;
 }
 
+.section__avatars {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4, 50%));
+  justify-content: center;
+}
 
+.avatars__desc {
+  margin: 10vh auto 5vh auto;
+  text-align: center;
+}
+
+.avatars__list {
+  margin: 0 auto;
+  height: 50vh;
+  text-align: center;
+}
+
+.avatar {
+  max-height: 40vh;
+  justify-content: center;
+}
+
+.section__facoin {
+  height: 100vh;
+  background: lightgray;
+  display: block;
+  justify-content: center;
+}
+
+.facoin__desc {
+}
+
+.facoin__logo {
+}
+
+.facoin {
+}
 
 /* .footer__container {}
 .error {}
@@ -131,14 +181,13 @@ margin: auto;
 
  */
 
- /* Media Queries */
- @media only screen and (max-width: 600px) {
-
-  .coins__list{
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .coins__list {
     width: 90%;
   }
 
-  .header{
+  .header {
     font-size: 1.5rem;
   }
 

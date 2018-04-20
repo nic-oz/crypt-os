@@ -1,22 +1,53 @@
 <section class="section__banner">
 
-  <h1 class="header">Choose a coin to find more info:</h1>
+  <h2 class="header">In a ludicrous world of digital currencies...</h2>
+  <p class="header__desc">Don't believe us? Simply click below of to see details of the top 10 cryptocurrencies in the world right now:</p>
 
-<div class="section__coins">
-  <div class="coins__list">
+  <div class="section__coins">
+    <div class="coins__list">
 
-    {{#each allCoins}}
+      {{#each allCoins}}
 
-    <div class="coin__list--item">
-      <a href="/{{this.symbol}}">
-        {{!-- <div class="coin__logo" style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div> --}}
-        <img src="/images/coins/{{ this.symbol }}.svg"/>
-      </a>
+      <div class="coin__list--item">
+        <a href="/{{this.symbol}}">
+          {{!--
+          <div class="coin__logo" style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div> --}}
+          <img src="/images/coins/{{ this.symbol }}.svg" />
+        </a>
+      </div>
+
+
+      {{/each}}
+
     </div>
-
-
-    {{/each}}
-
   </div>
-</div>
+</section>
+
+<h2 class="avatars__desc">A coding boy-band called Crypt-OS have decided to make a difference</h2>
+
+<section class="section__avatars">
+
+  <div class="avatars__list">
+    <img class="avatar" src="/images/avatars/hydn.png" />
+    <img class="avatar" src="/images/avatars/jnth.png" />
+    <img class="avatar" src="/images/avatars/nico.png" />
+    <img class="avatar" src="/images/avatars/phat.png" />
+  </div>
+
+</section>
+
+<section class="section__facoin">
+
+  <h2 class="facoin__desc">The future is
+    <span id="facoin__logo">FACoin</span>!</h2>
+  <h3>...and the future looks bright!</h3>
+
+  <div>
+    <img class="facoin" src="/images/facoin.png" />
+  </div>
+
+  <h2>Currently trading at the amazing value of £0.00</h2>
+  <h3>Please see our
+    <a href="">FACoin manual</a> for more info</h3>
+
 </section>
