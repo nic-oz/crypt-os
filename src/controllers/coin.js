@@ -17,9 +17,9 @@ function addHyphen(thing) {
 exports.get = (req, res, next) => {
   const { coinSym } = req.params;
   coinDetial(coinSym)
-    .then(coinRecord => {
-      if (coinRecord && coinRecord.length > 0) {
-        coinRecord = coinRecord[0];
+    .then(coinRecordArray => {
+      if (coinRecordArray && coinRecordArray.length > 0) {
+        coinRecord = coinRecordArray[0];
         appendApiData(`https://api.coinmarketcap.com/v1/ticker/${addHyphen(coinRecord.name)}/?convert=GBP`, function(err, result) {
           if (err) next();
           else {
