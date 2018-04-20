@@ -3,8 +3,8 @@
   <h2 class="header">In a ludicrous world of digital currencies...</h2>
   <p class="header__desc">Don't believe us? Simply click below of to see details of the top 10 cryptocurrencies in the world right now:</p>
 
-  <div class="section__coins">
-    <div class="coins__list">
+  <div aria-label="coins section" class="section__coins">
+    <div aria-label="coins list" class="coins__list">
 
       {{#each allCoins}}
 
@@ -12,7 +12,7 @@
         <a href="/{{this.symbol}}">
           {{!--
           <div class="coin__logo" style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div> --}}
-          <img src="/images/coins/{{ this.symbol }}.svg" />
+          <img src="/images/coins/{{ this.symbol }}.svg" alt="{{this.name}} Logo" />
         </a>
       </div>
 
@@ -25,29 +25,29 @@
 
 <h2 class="avatars__desc">A coding boy-band called Crypt-OS have decided to make a difference</h2>
 
-<section class="section__avatars">
+<section aria-label="team members section" class="section__avatars">
 
-  <div class="avatars__list">
-    <img class="avatar" src="/images/avatars/hydn.png" />
-    <img class="avatar" src="/images/avatars/jnth.png" />
-    <img class="avatar" src="/images/avatars/nico.png" />
-    <img class="avatar" src="/images/avatars/phat.png" />
+  <div aria-label="team photos" class="avatars__list">
+    <img class="avatar" src="/images/avatars/hydn.png" alt="Hydn Profile Pic" />
+    <img class="avatar" src="/images/avatars/jnth.png" alt="Jnth Profile Pic" />
+    <img class="avatar" src="/images/avatars/nico.png" alt="Nico Profile Pic" />
+    <img class="avatar" src="/images/avatars/phat.png" alt="Phat Profile Pic" />
   </div>
 
 </section>
 
-<section class="section__facoin">
+<section aria-label="Facoin section" class="section__facoin">
 
   <h2 class="facoin__desc">The future is
     <span id="facoin__logo">FACoin</span>!</h2>
   <h3>...and the future looks bright!</h3>
 
   <div>
-    <img class="facoin" src="/images/facoin.png" />
+    <img class="facoin" src="/images/facoin.png" alt="Facoin Logo" />
   </div>
 
   <h2>Currently trading at the amazing value of £0.00</h2>
   <h3>Please see our
-    <a href="">FACoin manual</a> for more info</h3>
+    <a aria-label="facoin manual" href="https://docs.google.com/presentation/d/1DEcmlFk8aa_HWLQlC6fql6IehHEq9Xf4oYMjVw-OPfU/edit?usp=sharing">FACoin manual</a> for more info</h3>
 
 </section>
