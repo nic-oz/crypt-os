@@ -8,6 +8,7 @@ body {
 }
 
 main {
+  background: #800057;
 }
 
 .header {
@@ -133,18 +134,43 @@ main {
   background-color: gray;
 }
 
+.section__avatars {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4, 50%));
+  justify-content: center;
+}
+
+.avatars__desc {
+  margin: 10vh auto 5vh auto;
+  text-align: center;
+}
+
 .avatars__list {
   margin: 0 auto;
-  display: grid;
   height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 5vh;
   text-align: center;
 }
 
 .avatar {
   max-height: 40vh;
   justify-content: center;
+}
+
+.section__facoin {
+  height: 100vh;
+  background: lightgray;
+  display: block;
+  justify-content: center;
+}
+
+.facoin__desc {
+}
+
+.facoin__logo {
+}
+
+.facoin {
 }
 
 /* .footer__container {}
