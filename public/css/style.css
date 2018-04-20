@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0;
+  background: #2d3436;
 }
 
 main {
@@ -99,7 +100,7 @@ main {
 .coin-article {
   background-color: lightGray;
   width: 400px;
-  margin: 9vh auto;
+  margin: 20vh auto 5vh auto;
   padding: 15px;
 }
 
@@ -190,7 +191,6 @@ main {
 .error__desc {}
 .error__msg {}
 .error__image {} */
-
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
