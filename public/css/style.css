@@ -1,6 +1,7 @@
 @import url('https://rsms.me/inter/inter-ui.css');
 html {
   font-family: 'Inter UI', sans-serif;
+  color: #f1f2f6;
 }
 
 body {
@@ -8,18 +9,16 @@ body {
 }
 
 main {
-  background: #800057;
+  background: #2d3436;
 }
 
 .header {
   margin-top: 5rem;
-  color: white;
   text-align: center;
   font-size: 2rem;
 }
 
 .header__desc {
-  color: white;
   text-align: center;
   font-size: 1rem;
 }
@@ -135,10 +134,7 @@ main {
 }
 
 .section__avatars {
-  height: 80vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(4, 50%));
-  justify-content: center;
+  min-height: 100vh;
 }
 
 .avatars__desc {
@@ -147,39 +143,54 @@ main {
 }
 
 .avatars__list {
-  margin: 0 auto;
-  height: 50vh;
-  text-align: center;
+  margin: 20vh auto 0;
+  height: 100%;
+  width: 99%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .avatar {
-  max-height: 40vh;
-  justify-content: center;
+  width: 100%;
+  /* justify-content: center; */
 }
 
 .section__facoin {
   height: 100vh;
-  background: lightgray;
+  background: #f1f2f6;
+  color: #2d3436;
   display: block;
-  justify-content: center;
+  text-align: center;
 }
 
 .facoin__desc {
+  padding-top: 15vh;
 }
 
 .facoin__logo {
 }
 
 .facoin {
+  height: 40vh;
+  width: auto;
 }
 
-/* .footer__container {}
-.error {}
+.footer__container {
+  background: #2d3436;
+  margin: 0;
+}
+
+.footer__container p {
+  margin: 0;
+  padding: 1vh 0;
+  text-align: center;
+}
+/* .error {}
 .error__desc {}
 .error__msg {}
-.error__image {}
+.error__image {} */
 
- */
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
