@@ -1,22 +1,39 @@
 <section class="section__banner">
 
-  <h1 class="header">Choose a coin to find more info:</h1>
+  <h2 class="header">In a ludicrous world of digital currencies...</h2>
+  <p class="header__desc">Don't believe us? Simply click below of to see details of the top 10 cryptocurrencies in the world right now:</p>
 
-<div class="section__coins">
-  <div class="coins__list">
+  <div class="section__coins">
+    <div class="coins__list">
 
-    {{#each allCoins}}
+      {{#each allCoins}}
 
-    <div class="coin__list--item">
-      <a href="/{{this.symbol}}">
-        {{!-- <div class="coin__logo" style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div> --}}
-        <img src="/images/coins/{{ this.symbol }}.svg"/>
-      </a>
+      <div class="coin__list--item">
+        <a href="/{{this.symbol}}">
+          {{!--
+          <div class="coin__logo" style="background-image: url(/images/coins/{{ this.symbol }}.svg)"></div> --}}
+          <img src="/images/coins/{{ this.symbol }}.svg" />
+        </a>
+      </div>
+
+
+      {{/each}}
+
     </div>
-
-
-    {{/each}}
-
   </div>
+</section>
+
+<h2>A team of boy-band coders called Crypt-OS have decided to make a difference</h2>
+
+<div class="avatars__list">
+  <img class="avatar" src="/images/avatars/1.svg" />
+  <img class="avatar" src="/images/avatars/2.svg" />
+  <img class="avatar" src="/images/avatars/3.svg" />
+  <img class="avatar" src="/images/avatars/4.svg" />
 </div>
+
+
+<section>
+
+
 </section>
