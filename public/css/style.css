@@ -157,7 +157,6 @@ main {
 }
 
 .section__facoin {
-  padding-top: 10vh;
   height: 100vh;
   background: #f1f2f6;
   color: #2d3436;
@@ -166,6 +165,7 @@ main {
 }
 
 .facoin__desc {
+  padding-top: 15vh;
 }
 
 .facoin__logo {
