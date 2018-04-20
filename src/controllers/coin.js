@@ -14,12 +14,14 @@ function addHyphen(thing) {
   return thing.replace(' ', '-');
 }
 
+
+
 exports.get = (req, res, next) => {
   const { coinSym } = req.params;
   coinDetial(coinSym)
     .then(coinRecord => {
       if (coinRecord && coinRecord.length > 0) {
-        coinRecord = coinRecord[0];
+        coinRecord = JSON.parse(JSON.stringify(coinRecord[0]));
         appendApiData(`https://api.coinmarketcap.com/v1/ticker/${addHyphen(coinRecord.name)}/?convert=GBP`, function(err, result) {
           if (err) next();
           else {
