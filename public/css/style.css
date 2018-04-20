@@ -61,9 +61,8 @@ main {
 }
 
 .section__coins {
-  height: 60%;
-  width: 60%;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .coins__list {
@@ -71,8 +70,9 @@ main {
   margin: 0 auto;
   display: grid;
   height: 35vh;
+  width: 60%;
   grid-template-columns: repeat(5, 1fr);
-  grid-row-gap: 5vh;
+  grid-gap: 5%;
   text-align: center;
 }
 
@@ -80,8 +80,8 @@ main {
 }
 
 .coin__list--item img {
-  min-height: 100%;
-  min-width: auto;
+  height: auto;
+  width: 100%;
   transform-style: preserve-3d;
   transition: transform 1s;
 }
@@ -180,3 +180,18 @@ main {
 .error__image {}
 
  */
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .coins__list {
+    width: 90%;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .coins__list {
+    height: 20vh;
+  }
+}

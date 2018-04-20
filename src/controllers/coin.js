@@ -23,15 +23,19 @@ exports.get = (req, res, next) => {
         appendApiData(`https://api.coinmarketcap.com/v1/ticker/${addHyphen(coinRecord.name)}/?convert=GBP`, function(err, result) {
           if (err) next();
           else {
-            result = JSON.parse(result); 
-            result = result[0];
-            coinRecord.price_gbp = result.price_gbp;
-            coinRecord.percent_change_1h = result.percent_change_1h;
-            coinRecord.percent_change_24h = result.percent_change_24h;
-            coinRecord.percent_change_7d = result.percent_change_7d;
-            return res.render('coindetail', { coinRecord });
+            try {
+              result = JSON.parse(result);
+              result = result[0];
+              coinRecord.price_gbp = result.price_gbp;
+              coinRecord.percent_change_1h = result.percent_change_1h;
+              coinRecord.percent_change_24h = result.percent_change_24h;
+              coinRecord.percent_change_7d = result.percent_change_7d;
+              return res.render('coindetail', { coinRecord });
+            } catch (e) {
+                console.log(e);
+            }
           }
-        });        
+        });
       } else {
         next();
       }
