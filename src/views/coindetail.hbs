@@ -3,17 +3,24 @@
     <img src="images/coins/{{ coinRecord.symbol }}.svg" />
     <h1>{{ coinRecord.name }}</h1>
   </header>
-  <main class="coin-article__body">
-    <p><strong>Rank:</strong> {{ coinRecord.rank }}</p>
-    <p><strong>Supply:</strong> {{ coinRecord.supply }}</p>
-    <p><strong>Price (GBP):</strong> {{ coinRecord.price_gbp }}</p>
+  <section class="coin-article__body">
+    <p>
+      <strong>Rank:</strong> {{ coinRecord.rank }}</p>
+    <p>
+      <strong>Supply:</strong> {{ coinRecord.supply }}</p>
+    <p>
+      <strong>Price (GBP):</strong> {{ coinRecord.price_gbp }}</p>
     <div>
-    <p><strong>Change in last hour:</strong> {{ coinRecord.percent_change_1h }}%</p>
-    <p><strong>Change in last day:</strong> {{ coinRecord.percent_change_24h }}%</p>
-    <p><strong>Change in last week:</strong> {{ coinRecord.percent_change_7d }}%</p>
+      <p>
+        <strong>Change in last hour:</strong> {{ coinRecord.percent_change_1h }}%</p>
+      <p>
+        <strong>Change in last day:</strong> {{ coinRecord.percent_change_24h }}%</p>
+      <p>
+        <strong>Change in last week:</strong> {{ coinRecord.percent_change_7d }}%</p>
     </div>
-  </main>
+  </section>
   <footer class="coin-article__footer">
-    <p><strong>Acronym:</strong> {{ coinRecord.symbol }}</p>
+    <p>
+      <strong>Acronym:</strong> {{ coinRecord.symbol }}</p>
   </footer>
 </article>

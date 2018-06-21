@@ -2,15 +2,17 @@
 html {
   font-family: 'Inter UI', sans-serif;
   color: #f1f2f6;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/background.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
 body {
   margin: 0;
-  background: #2d3436;
 }
 
 main {
-  background: #2d3436;
 }
 
 .header {
@@ -29,7 +31,6 @@ main {
   display: block;
   top: 0;
   height: 9vh;
-  background: white;
   width: 100%;
 }
 
@@ -51,10 +52,7 @@ main {
 }
 
 .section__banner {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../images/background.jpg');
-  background-size: cover;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,14 +96,14 @@ main {
 }
 
 .coin-article {
-  background-color: lightGray;
+  background-color: #2d3436;
   width: 400px;
   margin: 20vh auto 5vh auto;
   padding: 15px;
 }
 
 .coin-article__header {
-  background-color: skyblue;
+  background-color: #325959;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -128,10 +126,7 @@ main {
 .coin-article__body div {
   border: black solid 1px;
   padding: 10px;
-}
-
-.coin-article__footer {
-  background-color: gray;
+  background: #17171d;
 }
 
 .section__avatars {
@@ -180,6 +175,10 @@ main {
 .footer__container {
   background: #2d3436;
   margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .footer__container p {
